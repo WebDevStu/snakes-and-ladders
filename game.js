@@ -46,6 +46,7 @@ _.extend(Game.prototype, {
         // at 100 - game complete
         if (this.position === 100) {
             this.complete(thrown);
+            return;
         }
 
         // divisible by 9
